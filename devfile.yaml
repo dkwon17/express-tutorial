@@ -1,0 +1,20 @@
+schemaVersion: 2.2.0
+metadata:
+  name: express-tutorial
+attributes:
+  controller.devfile.io/storage-type: ephemeral
+components:
+  - name: tools
+    container:
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      mountSources: true
+commands:
+  - id: download-and-run
+    exec:
+      label: "Download dependencies and run"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/express-tutorial
+      commandLine: "npm i && node app.js"
+      group:
+        kind: build
+        isDefault: true
