@@ -1,0 +1,22 @@
+{
+  "name": "express-tutorial",
+  "version": "1.0.0",
+  "description": "Express [Hello world](https://expressjs.com/en/starter/hello-world.html) example with devfile",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkwon17/express-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkwon17/express-tutorial/issues"
+  },
+  "homepage": "https://github.com/dkwon17/express-tutorial#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
