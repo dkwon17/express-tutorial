@@ -6,6 +6,12 @@ attributes:
 components:
   - name: tools
     container:
+      endpoints:
+        - exposure: public
+          name: my-endpoint
+          path: /
+          protocol: http
+          targetPort: 3000
       image: quay.io/devfile/universal-developer-image:ubi8-latest
       mountSources: true
 commands:
